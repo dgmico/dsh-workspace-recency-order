@@ -1,0 +1,17 @@
+# Node
+node_modules/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Local scratch
+/coverage/
+*.tgz

@@ -1,0 +1,35 @@
+{
+  "name": "dsh-workspace-recency-order",
+  "version": "1.0.0",
+  "description": "按工作区内最新会话活动时间自动重排 DSH 左侧工作区顺序（Host 侧插件，写入官方持久工作区顺序，不覆盖任何官方 UI）",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "workspace",
+    "sidebar",
+    "sort"
+  ],
+  "license": "MIT"
+}
